@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ctO95zxSdwl7RoHkVmQmISDIIlMmbhmK1LBmjnXOWB4JQFCU7LHLK8vKekr6WqGFiLm4eVXa7GElyKCEP92r2g==",
+  "dgSpecHash": "Ief9EGzqnHPZw4TSy0H8NBP2EoMS6D2dVz3IC+FfMXBa9OIgcDlpoUPhtqaMcXL1tPkwwkLyeTWW3/Yz3DUtJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ilya\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
+  "projectFilePath": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ilya\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\Ilya\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
