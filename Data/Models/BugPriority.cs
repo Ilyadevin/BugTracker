@@ -18,7 +18,7 @@
         /// <summary>
         /// list of bugs of current category
         /// </summary>
-        public List<Bug> Bugs { get; set; }
+        public List<Bugs> Bugs { get; set; }
 
     }
 }

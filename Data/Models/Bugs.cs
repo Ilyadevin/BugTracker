@@ -1,6 +1,6 @@
 ﻿namespace BugTracker.Data.Models
 {
-    public class Bug
+    public class Bugs
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

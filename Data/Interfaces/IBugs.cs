@@ -4,8 +4,8 @@ namespace BugTracker.Data.Interfaces
 {
     public interface IBugs
     {
-        IEnumerable<Bug> Bugs { get;}
-        IEnumerable<Bug> getSolvedBugs {  get; set; }
-        Bug getObjectBug(Guid BugId);
+        IEnumerable<Bugs> Bugs { get;}
+        IEnumerable<Bugs> getSolvedBugs {  get; set; }
+        Bugs getObjectBug(Guid BugId);
     }
 }
