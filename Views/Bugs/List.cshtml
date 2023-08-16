@@ -1,0 +1,11 @@
+﻿<h1> All found bugs </h1>
+<h2>@Model.CurrCategory</h2>
+@{
+    foreach(var bug in Model.AllBugs)
+    {
+        <div>
+        <h2> Name: @bug.Name</h2>
+        <p> IsSolved: @bug.CreationDate</p>
+        </div>
+    }
+}
