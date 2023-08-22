@@ -8,6 +8,7 @@
         public string? LongDescription { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime? DateOfLastInteraction { get; set; }
+        public string ScreenShot { get; set; }
         public bool IsSolved { get; set; }
         public Guid PriorityID { get; set; }
         public BugPriority Priority { get; set; }
