@@ -1,0 +1,47 @@
+﻿@model Bug
+@{
+    ViewData["Title"] = "New bug";
+}
+
+<div class="text-center">
+    <h1 class="display-4">New bug creation form</h1>
+    <form method="post" asp-asp-controller="Bug" asp-action="Create" style="max-width: 500px; margin-left: auto; margin-right: auto; padding: 15px;">
+        <div class="text-field text-field_floating-3">
+            <input asp-for="Name" class="text-field__input"  name="Name" placeholder="Пример: баг в системе авторизации"></>
+            <label asp-for="Name" class="text-field__label" for="Name">Название бага</label>
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div class="text-field text-field_floating-3">
+            <input asp-for="ShortDescription" class="text-field__input" name="ShortDescription" placeholder="Опишите проблему подробнее"></>
+            <label asp-for="ShortDescription" class="text-field__label" for="ShortDescription">Короткое описание</label>
+            <span asp-validation-for="ShortDescription"></span>
+        </div>
+        <div class="text-field text-field_floating-3">
+            <textarea asp-for="LongDescription" class="text-field__input"></textarea>
+            <label asp-for="LongDescription"  class="text-field__label" for="LongDescription">Подробное описание</label>
+            <span asp-validation-for="LongDescription"></span>
+        </div>
+        <div class="text-field text-field_floating-3">
+            <input asp-for="CreationDate" value="@DateTime.Today" />
+            <label asp-for="CreationDate">Дата создания</label>
+            <span asp-validation-for="CreationDate"></span>
+        </div>
+        <div>
+            <p>Исправлена ли ошибка</p>
+                <div class="radio" >
+                    <input class="custom-radio" type="radio" id="option-1" name="option" value="1" />
+                    <label for="option-1">Да</label>
+                </div>
+                <div class="radio">
+                    <input class="custom-radio" type="radio" id="option-2" name="option" value="0" />
+                    <label for="option-2">Нет</label>
+                </div>
+        </div>
+        <div class="text-field text-field_floating-3">
+            <input asp-for="Priority" />
+            <label asp-for="Priority">Приоритет</label>
+            <span asp-validation-for="Priority"></span>
+        </div>
+        <input type="submit" value="Send Bug to system" />
+    </form>
+</div>
