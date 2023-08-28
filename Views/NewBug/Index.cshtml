@@ -12,23 +12,23 @@
             <span asp-validation-for="Name"></span>
         </div>
         <div class="text-field text-field_floating-3">
-            <input asp-for="ShortDescription" class="text-field__input" name="ShortDescription" placeholder="Опишите проблему подробнее"></>
+            <input asp-for="ShortDescription" class="text-field__input" name="ShortDescription" placeholder="Опишите проблему"></>
             <label asp-for="ShortDescription" class="text-field__label" for="ShortDescription">Короткое описание</label>
             <span asp-validation-for="ShortDescription"></span>
         </div>
         <div class="text-field text-field_floating-3">
-            <textarea asp-for="LongDescription" class="text-field__input"></textarea>
+            <textarea asp-for="LongDescription" class="text-field__input" name="LongDescription" placeholder="Опишите проблему подробнее"></textarea>
             <label asp-for="LongDescription"  class="text-field__label" for="LongDescription">Подробное описание</label>
             <span asp-validation-for="LongDescription"></span>
         </div>
         <div class="text-field text-field_floating-3">
-            <input asp-for="CreationDate" value="@DateTime.Today" />
-            <label asp-for="CreationDate">Дата создания</label>
+            <input asp-for="CreationDate" class="text-field__input" name="CreationDate" value="@DateTime.Today" />
+            <label asp-for="CreationDate" class="text-field__label" for="CreationDate">Дата создания</label>
             <span asp-validation-for="CreationDate"></span>
         </div>
         <div>
             <p>Исправлена ли ошибка</p>
-                <div class="radio" >
+                <div class="radio" style="margin: 0px auto; text-align: left;">
                     <input class="custom-radio" type="radio" id="option-1" name="option" value="1" />
                     <label for="option-1">Да</label>
                 </div>
@@ -38,10 +38,10 @@
                 </div>
         </div>
         <div class="text-field text-field_floating-3">
-            <input asp-for="Priority" />
-            <label asp-for="Priority">Приоритет</label>
+            <input asp-for="Priority" class="text-field__input" name="Priority" placeholder="Приоритет" />
+            <label asp-for="Priority" class="text-field__label" for="Priority">Приоритет</label>
             <span asp-validation-for="Priority"></span>
         </div>
-        <input type="submit" value="Send Bug to system" />
+        <input class="btn" type="submit" value="Send Bug to system">
     </form>
 </div>
