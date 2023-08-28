@@ -26,7 +26,7 @@
             <label asp-for="CreationDate" class="text-field__label" for="CreationDate">Дата создания</label>
             <span asp-validation-for="CreationDate"></span>
         </div>
-        <div>
+        <div class="container">
             <p>Исправлена ли ошибка</p>
                 <div class="radio" style="margin: 0px auto; text-align: left;">
                     <input class="custom-radio" type="radio" id="option-1" name="option" value="1" />
@@ -37,11 +37,20 @@
                     <label for="option-2">Нет</label>
                 </div>
         </div>
-        <div class="text-field text-field_floating-3">
-            <input asp-for="Priority" class="text-field__input" name="Priority" placeholder="Приоритет" />
-            <label asp-for="Priority" class="text-field__label" for="Priority">Приоритет</label>
-            <span asp-validation-for="Priority"></span>
+        <div>
+            <span>Choose Priority</span>
+            <select asp-for="Priority" class="custom-select" name="Priority" aria-invalid="false">
+                <option id=1>Low</option>
+                <option id=2>Medium</option>
+                <option id=3>High</option>
+            </select>
         </div>
-        <input class="btn" type="submit" value="Send Bug to system">
+        <style>
+            div{
+            margin-top:10px}
+        </style>
+        <div class="box">
+            <input class="btn" type="submit" value="Send Bug to system">
+        </div>
     </form>
 </div>

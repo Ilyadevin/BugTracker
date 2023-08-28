@@ -15,8 +15,7 @@ namespace BugTracker.Data.Models
         public DateTime? DateOfLastInteraction { get; set; }
         public string ScreenShot { get; set; }
         public bool IsSolved { get; set; }
-        public Guid PriorityID { get; set; }
-        //[Required(ErrorMessage = "Need to select a bug priority")]
+        public int PriorityID { get; set; }
         public BugPriority Priority { get; set; }
 
     }
