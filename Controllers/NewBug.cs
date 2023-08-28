@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BugTracker.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BugTracker.Controllers
 {
@@ -7,6 +8,15 @@ namespace BugTracker.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Bug bugs)
+        {
+            if (ModelState.IsValid)
+            {
+                return Redirect("/");
+            }
+            return View("Index");
         }
     }
 }

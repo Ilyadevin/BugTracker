@@ -8,17 +8,17 @@
         /// <summary>
         /// id of bug Priority
         /// </summary>
-        public Guid Id { set; get; }
+        public int Id {set; get; }
         /// <summary>
         /// name of bug Priority
         /// </summary>
         public string BugClassName { set; get; }
-        public string ShortDescription { get; set; }
-        public string? LongDescription { get; set; }
+        public string Description { get; set; }
         /// <summary>
         /// list of bugs of current category
         /// </summary>
         public List<Bugs> Bugs { get; set; }
 
     }
+    
 }
