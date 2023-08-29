@@ -13,7 +13,7 @@ namespace BugTracker.Data.Models
         [Required(ErrorMessage = "Need to specify a date of bug appearance")]
         public DateTime CreationDate { get; set; }
         public DateTime? DateOfLastInteraction { get; set; }
-        public string ScreenShot { get; set; }
+        public string? ScreenShot { get; set; }
         public bool IsSolved { get; set; }
         public int PriorityID { get; set; }
         public BugPriority Priority { get; set; }
