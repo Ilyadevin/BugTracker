@@ -13,6 +13,9 @@
         /// name of bug Priority
         /// </summary>
         public string BugClassName { set; get; }
+        /// <summary>
+        /// description for priority
+        /// </summary>
         public string Description { get; set; }
         /// <summary>
         /// list of bugs of current category
