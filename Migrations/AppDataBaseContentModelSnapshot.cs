@@ -31,16 +31,34 @@ namespace BugTracker.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("BugClassName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("BugPriority");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BugClassName = "Low",
+                            Description = "Description"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BugClassName = "Medium",
+                            Description = "Description"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            BugClassName = "High",
+                            Description = "Description"
+                        });
                 });
 
             modelBuilder.Entity("BugTracker.Data.Models.Bugs", b =>
@@ -80,6 +98,43 @@ namespace BugTracker.Migrations
                     b.HasIndex("PriorityID");
 
                     b.ToTable("Bugs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("951e0073-b171-4cf7-a217-08f9fe128b7e"),
+                            CreationDate = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Local),
+                            IsSolved = false,
+                            LongDescription = "Long descr",
+                            Name = "error in smth, low proirity",
+                            PriorityID = 1,
+                            ScreenShot = "/img/34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+                            ShortDescription = "shortdescr"
+                        },
+                        new
+                        {
+                            Id = new Guid("4302e22f-7871-45fc-a920-0d8fab157a9f"),
+                            CreationDate = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Local),
+                            DateOfLastInteraction = new DateTime(2023, 8, 30, 0, 0, 0, 0, DateTimeKind.Local),
+                            IsSolved = false,
+                            LongDescription = "Long descr",
+                            Name = "error in smth, middle priority",
+                            PriorityID = 2,
+                            ScreenShot = "/img/34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+                            ShortDescription = "shortdescr"
+                        },
+                        new
+                        {
+                            Id = new Guid("b759ed5c-24e3-42fe-b2be-1ffc48b2d50d"),
+                            CreationDate = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Local),
+                            DateOfLastInteraction = new DateTime(2023, 8, 30, 0, 0, 0, 0, DateTimeKind.Local),
+                            IsSolved = false,
+                            LongDescription = "Long descr",
+                            Name = "error in smth, high priority",
+                            PriorityID = 3,
+                            ScreenShot = "/img/34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+                            ShortDescription = "shortdescr"
+                        });
                 });
 
             modelBuilder.Entity("BugTracker.Data.Models.Bugs", b =>
