@@ -1,10 +1,11 @@
 using BugTracker.Data;
 using BugTracker.Data.Interfaces;
 using BugTracker.Data.Mocs;
+using BugTracker.Data.Models;
 using BugTracker.Data.Repository;
 using Microsoft.AspNetCore;
 using Microsoft.EntityFrameworkCore;
-
+using System.Data.Entity;
 
 internal class Program
 {
@@ -30,8 +31,13 @@ internal class Program
             // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
-        app.MapGet("/", (AppDataBaseContent db) => db.BugPriority.ToList());
-
+        app.MapGet("/Home", async(AppDataBaseContent db) => await db.Bugs.ToListAsync());
+        app.MapGet("/Home/Bugs/List", async (Guid id, AppDataBaseContent db) =>
+        {
+            Bugs? bug = await db.Bugs.FirstOrDefaultAsync(u => u.Id == id);
+            if (bug != null) return Results.NotFound(new { message = "Bugs are not found, all clear" });
+            return Results.Json(bug);
+        });
         app.UseDeveloperExceptionPage();
         app.UseStatusCodePages();
         app.UseStaticFiles();
