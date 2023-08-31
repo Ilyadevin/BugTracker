@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\BugTracker.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\img\\34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+      "PackagePath": "staticwebassets\\img\\34a012f9-68cf-4e21-81b2-2023d75c4f96.png"
+    },
+    {
+      "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
       "Id": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\js\\site.js",

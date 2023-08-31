@@ -1,5 +1,8 @@
 ﻿<h1> All found bugs </h1>
 <h2>@Model.CurrCategory</h2>
+<div class="box">
+    <a class="btn" type="submit" asp-area="" asp-controller="NewBug" asp-action="Index">Create new bug</a>
+</div>
 <div class="row mt-5 mb-2">
     @{
         foreach(var bug in Model.AllBugs)

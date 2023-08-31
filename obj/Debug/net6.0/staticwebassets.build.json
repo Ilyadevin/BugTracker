@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GRIGaVi+DPoMDMK+dyWggEJPdEP6GEHsh3S1HG1Z9Xg=",
+  "Hash": "0e79X681kQkHzAfLDC0trDDfoMDVszb6GkHGjHBYfhk=",
   "Source": "BugTracker",
   "BasePath": "_content/BugTracker",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BugTracker.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "BugTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\",
+      "BasePath": "_content/BugTracker",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
       "Identity": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\css\\site.css",
       "SourceId": "BugTracker",
       "SourceType": "Discovered",
@@ -83,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\img\\34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+      "SourceId": "BugTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\",
+      "BasePath": "_content/BugTracker",
+      "RelativePath": "img/34a012f9-68cf-4e21-81b2-2023d75c4f96.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\34a012f9-68cf-4e21-81b2-2023d75c4f96.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "BugTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\",
+      "BasePath": "_content/BugTracker",
+      "RelativePath": "js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
       "Identity": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\wwwroot\\js\\site.js",

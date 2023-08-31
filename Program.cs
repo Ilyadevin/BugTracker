@@ -4,7 +4,13 @@ using BugTracker.Data.Mocs;
 using BugTracker.Data.Models;
 using BugTracker.Data.Repository;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Data.Entity;
 
 internal class Program
@@ -18,12 +24,42 @@ internal class Program
         services.AddTransient<IBugs, BugsRepository>();
         services.AddTransient<IBugPriority, BugPriorityRepository>();
         services.AddMvc();
+/*        services.AddAuthorization();
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    // указывает, будет ли валидироваться издатель при валидации токена
+                    ValidateIssuer = true,
+                    // строка, представляющая издателя
+                    ValidIssuer = AuthenticationOptions.ISSUER,
+                    // будет ли валидироваться потребитель токена
+                    ValidateAudience = true,
+                    // установка потребителя токена
+                    ValidAudience = AuthOptions.AUDIENCE,
+                    // будет ли валидироваться время существования
+                    ValidateLifetime = true,
+                    // установка ключа безопасности
+                    IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+                    // валидация ключа безопасности
+                    ValidateIssuerSigningKey = true,
+                };
+            });*/
+        
+    
 
         builder.Services.AddDbContext<AppDataBaseContent>(options => options.UseSqlServer(connection));
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
         var app = builder.Build();
+        app.UseDeveloperExceptionPage();
+        app.UseStatusCodePages();
+        app.UseStaticFiles();
+        app.UseRouting();
+        app.UseAuthentication();
+        app.UseAuthorization();
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
@@ -38,16 +74,36 @@ internal class Program
             if (bug != null) return Results.NotFound(new { message = "Bugs are not found, all clear" });
             return Results.Json(bug);
         });
-        app.UseDeveloperExceptionPage();
-        app.UseStatusCodePages();
-        app.UseStaticFiles();
-        app.UseRouting();
-        app.UseAuthorization();
-        //DBObjects.Initial(builder)
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
-        //app.MapGet()
+        /*app.Run(async(context)=>
+            {
+            context.Response.ContentType = "text/html; charset=utf-8";
+
+            
+            if (context.Request.Path == "/Create")
+            {
+                var form = context.Request.Form;
+                string name = form["Name"];
+                string shortDescription = form["ShortDescription"];
+                string longDescription = form["LongDescription"];
+                string creationDate = form["CreationDate"];
+                string isSolved = form["Description"];
+                string priority = form["Priority"];
+                    await context.Response.WriteAsync($"<div><input>Name{name}</input></div>" +
+                        $"<div><input>ShortDescription{shortDescription}</input></div>" +
+                        $"<div><textarea>LongDescription{longDescription}</textarea></div>" +
+                        $"<div><input>CreationDate{creationDate}</input></div>" +
+                        $"<div><input>IsSolved{isSolved}</input></div>" +
+                        $"<div><span><select>Priority{priority}</select></span></div>");
+            }
+            else
+            {
+                await context.Response.SendFileAsync("html/index.html");
+            }
+        });*/
         app.Run();
+
     }
 }
