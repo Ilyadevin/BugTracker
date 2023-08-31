@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ilya\source\repos\Ilyadevin\BugTracker
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Bugs/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVnc1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Bugs/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVnc1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/NewBug/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3QnVnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Shared/Error.cshtml]

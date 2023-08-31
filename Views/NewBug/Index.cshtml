@@ -1,6 +1,6 @@
 ﻿@model Bug
 @{
-    ViewData["Title"] = "New bug";
+    ViewData["Title"] = "Create an issue ";
 }
 
 <div class="text-center">
@@ -27,13 +27,13 @@
             <span asp-validation-for="CreationDate"></span>
         </div>
         <div class="container">
-            <p>Исправлена ли ошибка</p>
+            <p>Fixed?</p>
                 <div class="radio" style="margin: 0px auto; text-align: left;">
-                    <input class="custom-radio" type="radio" id="option-1" name="option" value="1" />
+                    <input class="custom-radio" asp-for="IsSolved" name="IsSolved" type="radio" id="option-1" name="option" value=1 />
                     <label for="option-1">Да</label>
                 </div>
                 <div class="radio">
-                    <input class="custom-radio" type="radio" id="option-2" name="option" value="0" />
+                <input class="custom-radio" asp-for="IsSolved" name="IsSolved" type="radio" id="option-2" name="option" value=0 />
                     <label for="option-2">Нет</label>
                 </div>
         </div>
