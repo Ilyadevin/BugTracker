@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
         "projectName": "BugTracker",
-        "projectPath": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
-        "packagesPath": "C:\\Users\\Ilya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Ilyadevin\\BugTracker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,6 +53,10 @@
               "version": "[5.2.9, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.21, )"
             },
