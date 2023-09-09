@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WZpc46B34tinFFTk/YXy3bPI7gww2qZ3OF8CNmQU55Yqdr7baHPegXOn2KuD9kHdT0v1bFWYcLq2elfqdyll9A==",
+  "dgSpecHash": "ti8+4Uym/x6pjA7842cYb9/2GvapPLTqTziWl2Da1LFvpAicwqsmWK+ONZrb6rDNzYhgZq5PteUF5JUJ76CB0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
+  "projectFilePath": "C:\\Users\\Ilya\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ilya\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ilya\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

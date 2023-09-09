@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BugTracker
 build_property.RootNamespace = BugTracker
-build_property.ProjectDir = C:\Users\Ilya\source\repos\Ilyadevin\BugTracker\
+build_property.ProjectDir = C:\Users\Ilya\Source\Repos\Ilyadevin\BugTracker\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ilya\source\repos\Ilyadevin\BugTracker
+build_property.MSBuildProjectDirectory = C:\Users\Ilya\Source\Repos\Ilyadevin\BugTracker
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Ilya/source/repos/Ilyadevin/BugTracker/Views/Bugs/Detail.cshtml]
