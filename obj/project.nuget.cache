@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OjyxAp1LTVsEUgCcMculImBIZrcQE3+O+xFfZB9lz6YjcDkOTkbxNwZ1jv97oOoYyrtgUj81zsRCTKCZNA2yKw==",
+  "dgSpecHash": "R15mHqNvjdTLhuZx7sv5ZAQKx+3G8443Nkssp9av1Sla61Q4j7Cp50jV2EfEbz4bFZZdWgySC95rd5svcS6F1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ilya\\Source\\Repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
+  "projectFilePath": "C:\\Users\\Ilya\\source\\repos\\Ilyadevin\\BugTracker\\BugTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ilya\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ilya\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -102,12 +102,6 @@
     "C:\\Users\\Ilya\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Ошибка чтения файла кэша C:\\Users\\Ilya\\Source\\Repos\\Ilyadevin\\BugTracker\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",
