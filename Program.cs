@@ -1,21 +1,11 @@
 using BugTracker.Data;
 using BugTracker.Data.Interfaces;
-using BugTracker.Data.Mocs;
 using BugTracker.Data.Models;
 using BugTracker.Data.Repository;
-using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authentication.OAuth;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System;
 using System.Data.Entity;
-using System.Security.Claims;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -35,7 +25,7 @@ internal class Program
         services.AddAuthentication("Cookies");
         services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options => options.LoginPath = "/login");
         services.AddAuthorization();
-        /*        services.AddAuthorization();
+        /*       services.AddAuthorization();
                 services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {
