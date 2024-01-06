@@ -7,5 +7,5 @@ public class UserViewModel
     public string Id { get; set; }
     public string UserName { get; set; }
     //TODO: Нужна реализация отображения фото
-    //public string ProfileImageUrl { get; set; }
+    public string ProfileImageUrl { get; set; }
 }
